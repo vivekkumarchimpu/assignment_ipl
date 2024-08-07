@@ -14,7 +14,7 @@ const IPLTable = () => {
     }, [])
 
     const shortListing = () => {
-        let temp = ipldata.sort((item, item2) => item.NRR - item2.NRR );
+        const temp = ipldata.sort((item, item2) => item.NRR - item2.NRR );
         setIpldata([...temp]);
     }
     return (
